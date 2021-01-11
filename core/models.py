@@ -21,6 +21,7 @@ class OrderItem(models.Model):
     def _str_(self):
         return self.title
 
+# When items are added to cart, they become OrderItems
 # Will link all order items - shopping cart
 # When logged in, should fetch shopping cart
 
