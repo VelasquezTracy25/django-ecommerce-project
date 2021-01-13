@@ -20,14 +20,15 @@ class HomeView(ListView):
     model = Item
     template_name = "home.html"
 
+# not needed but commenting for reference
+# def home(request):
+#     context = {
+#         'items': Item.objects.all()
+#     }
+#     return render(request, "home.html", context)
 
-def home(request):
-    context = {
-        'items': Item.objects.all()
-    }
-    return render(request, "home.html", context)
 
-
+# Renders individual item view
 def ItemDetailView(DetailView):
-    mode = Item
-    template_name = "products.html"
+    model = Item
+    template_name = "product.html"
